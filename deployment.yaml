@@ -30,7 +30,5 @@ spec:
     - protocol: TCP
       port: 80  # The port exposed by the service within the cluster
       targetPort: 3000  # The port your React app is listening on inside the pod
-  type: NodePort
-  ports:
-    - port: 80  # The port exposed by the service on the node
-      nodePort: 30080  # The NodePort you want to use to access the service externally
+  type: LoadBalancer
+
