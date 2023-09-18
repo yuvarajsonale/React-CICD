@@ -21,6 +21,9 @@ WORKDIR /app
 # Copy the built files from the previous stage
 COPY --from=build /app/build ./build
 
+# Copy package.json from the first stage (this was missing)
+COPY --from=build /app/package.json ./
+
 # Expose port 3000 for the React app
 EXPOSE 3000
 
