@@ -10,7 +10,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Build the React app
+# Build the React app (replace 'npm run build' with your actual build command)
 RUN npm run build
 
 # Stage 2: Create a lightweight production image
@@ -24,5 +24,5 @@ COPY --from=build /app/build ./build
 # Expose port 3000 for the React app
 EXPOSE 3000
 
-# Start the React app
-CMD ["node", "./build/index.js"]
+# Start the React app using "npm start"
+CMD ["npm", "start"]
