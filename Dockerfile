@@ -10,6 +10,9 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Copy craco.config.js to the container (make sure it's in the root directory)
+COPY craco.config.js ./
+
 # Build the React app
 RUN npm run build
 
@@ -18,11 +21,10 @@ FROM node:16-slim
 
 WORKDIR /app
 
-# Copy the built files from the previous stage
+# Copy the built files, package.json, and craco.config.js from the previous stage
 COPY --from=build /app/build ./build
-
-# Copy package.json and package-lock.json from the first stage
 COPY --from=build /app/package*.json ./
+COPY --from=build /app/craco.config.js ./
 
 # Install craco as a development dependency
 RUN npm install --save-dev @craco/craco
