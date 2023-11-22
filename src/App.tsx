@@ -30,8 +30,8 @@ export const App = () => {
         </p>
         <ul>
           <li>
-            <a href="https://youtu.be/vI0QArPnkUc" target="_blank">
-              Tutorial (YouTube video)
+            <a href="https" target="_blank">
+              Tutorial ()
             </a>
           </li>
           <li>
@@ -44,7 +44,7 @@ export const App = () => {
           </li>
           <li>
             <a
-              href="https://mateuszsokola.github.io/2048-animation-examples/"
+              href="https://github.com/yuvarajsonale/React-CICD/"
               target="_blank"
             >
               Animation Examples (Github Pages)
@@ -52,7 +52,7 @@ export const App = () => {
           </li>
         </ul>
         <p>
-          This game (2048) was built using <b>React</b> and <b>TypeScript</b>.
+          This game was built using <b>React</b> and <b>TypeScript</b>.
           The unique part of this example is animations. The animations in React
           aren't that straightforward, so I hope you can learn something new
           from it.
@@ -61,7 +61,7 @@ export const App = () => {
       <div className="footer">
         Made with ❤️ by{" "}
         <a
-          href="https://www.youtube.com/channel/UCJV16_5c4A0amyBZSI4yP6A"
+          href="A"
           target="_blank"
         >
           Matt Sokola
