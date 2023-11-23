@@ -1,0 +1,12 @@
+# Use `allow` to specify which dependencies to maintain
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      # Allow updates for Lodash
+      - dependency-name: "lodash"
+      # Allow updates for React and any packages starting "react"
+      - dependency-name: "react*"
