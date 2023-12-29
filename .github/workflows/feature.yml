@@ -2,8 +2,9 @@ name: Build React Application
 
 on:
   push:
-    branches: [ "main" ]
-
+    branches: [ "feature" ]
+    
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
